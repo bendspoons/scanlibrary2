@@ -51,7 +51,7 @@ public class ResultFragment extends Fragment {
 
     private void init() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.topBar);
-        lyt.setBackgroundColor(Color.parseColor("#fa2000"));
+        toolbar.setBackgroundColor(Color.parseColor("#fa2000"));
 
         scannedImageView = (ImageView) view.findViewById(R.id.scannedImage);
         originalButton = (Button) view.findViewById(R.id.original);
