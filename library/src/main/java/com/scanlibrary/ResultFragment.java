@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
-import android.widget.Toolbar;
+import android.widget.LinearLayout;
 import android.graphics.Color;
 
 import java.io.IOException;
@@ -50,7 +50,7 @@ public class ResultFragment extends Fragment {
     }
 
     private void init() {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.topBar);
+        LinearLayout toolbar = (LinearLayout) findViewById(R.id.topBar);
         toolbar.setBackgroundColor(Color.parseColor("#fa2000"));
 
         scannedImageView = (ImageView) view.findViewById(R.id.scannedImage);
