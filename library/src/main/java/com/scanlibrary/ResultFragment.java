@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
+import androidx.appcompat.widget.Toolbar;
+import android.graphics.Color;
 
 import java.io.IOException;
 
@@ -23,6 +25,7 @@ import java.io.IOException;
 public class ResultFragment extends Fragment {
 
     private View view;
+    private ImageView scannedImageView;
     private ImageView scannedImageView;
     private Button doneButton;
     private Bitmap original;
@@ -47,6 +50,9 @@ public class ResultFragment extends Fragment {
     }
 
     private void init() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.topBar);
+        lyt.setBackgroundColor(Color.parseColor("#fa2000"));
+
         scannedImageView = (ImageView) view.findViewById(R.id.scannedImage);
         originalButton = (Button) view.findViewById(R.id.original);
         originalButton.setOnClickListener(new OriginalButtonClickListener());

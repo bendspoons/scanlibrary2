@@ -9,9 +9,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 
-import android.widget.LinearLayout;
-import android.graphics.Color;
-
 /**
  * Created by jhansi on 28/03/15.
  */
@@ -21,10 +18,6 @@ public class ScanActivity extends Activity implements IScanner, ComponentCallbac
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scan_layout);
-
-        LinearLayout lyt = findViewById(R.id.topBar);
-        lyt.setBackgroundColor(Color.parseColor("#fa2000"));
-
         init();
     }
 
